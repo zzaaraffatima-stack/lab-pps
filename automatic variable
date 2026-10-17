@@ -1,0 +1,18 @@
+/program for automatic variable
+#include <stdio.h>
+void display();
+int a=7;
+void main ()
+{
+    display();
+    display();
+    display();
+    printf("a=%d",a);
+}
+    void display ()
+    {
+        static int i=1;
+        printf("%d\n",i);
+        i++;
+        printf("a=%d",a);
+    }
